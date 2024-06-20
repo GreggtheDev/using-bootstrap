@@ -47,3 +47,39 @@ document.addEventListener('DOMContentLoaded', (event) => {
             backToTopButton.style.display = 'none'; // Hide button when at the top
         }
     }); 
+
+       // Dynamic greeting message based on time of day
+       const greeting = document.createElement('p'); // Create a paragraph element
+       const now = new Date(); // Get the current date and time
+       const hour = now.getHours(); // Get the current hour
+   
+       // Determine the greeting message based on the time
+       if (hour < 12) {
+           greeting.innerText = 'Good Morning!';
+       } else if (hour < 18) {
+           greeting.innerText = 'Good Afternoon!';
+       } else {
+           greeting.innerText = 'Good Evening!';
+       }
+   
+       // Style the greeting message
+       greeting.style.fontSize = '1.2rem';
+       greeting.style.marginTop = '20px';
+       greeting.style.color = '#ff9800';
+       document.querySelector('.hero .container').appendChild(greeting); // Add the greeting to the hero section
+   
+       // Animations on scroll
+       const animatedElements = document.querySelectorAll('.animate-on-scroll'); // Get elements to animate
+       const observer = new IntersectionObserver(entries => {
+           entries.forEach(entry => {
+               if (entry.isIntersecting) {
+                   entry.target.classList.add('animated'); // Add animation class when in view
+               }
+           });
+       }, { threshold: 0.1 }); // Trigger when 10% of the element is in view
+   
+       animatedElements.forEach(el => {
+           observer.observe(el); // Observe each element
+       });
+   });
+    
