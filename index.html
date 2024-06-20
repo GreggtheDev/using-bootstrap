@@ -2,198 +2,194 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--Make the website responsive to different screen sizes-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Website Title-->
-    <title>Bootstrap</title>
-     <!-- Link to Bootstrap CSS for styling -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-     <!-- Link to Bootstrap Icons CSS for icons -->
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" rel="stylesheet">
-     <style>
+    <!-- Website Title -->
+    <title>Bootstrap Website</title>
+    <!-- Link to Bootstrap CSS for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Link to Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
         /* General body styling */
         body {
-            font-family: 'Arial', sans-serif; /* Sets the font family to Arial */
-            line-height: 1.6; /* Sets the line height for better readability */
-            color: #333; /* Sets the text color to dark gray */
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
         }
 
-      /* Navigation Bar */
-      .navbar{
-        background-color: #333; /* Sets the background color to dark gray */
-        border-bottom: 2px solid #ff9800; /* Sets the border color to orange */
-      }
+        /* Navigation Bar */
+        .navbar {
+            background-color: #333;
+            border-bottom: 2px solid #ff9800;
+        }
 
-      .navbar .navbar-brand {
-        color: #ff9800; /* Sets the text color to orange */
-        font-weight: bold; /* Sets the font weight to bold */
-      }
+        .navbar .navbar-brand {
+            color: #ff9800;
+            font-weight: bold;
+        }
 
-      .navbar .navbar-link {
-        color: #fff; /* Sets the text color to white */
-        margin-right: 15px; /* Sets the right margin to 15px */
-    }
+        .navbar .navbar-link {
+            color: #fff;
+            margin-right: 15px;
+        }
 
-    .navbar .navbar-link:hover {
-        color: #ff9800; /* Sets the link color to orange */
-    }
+        .navbar .navbar-link:hover {
+            color: #ff9800;
+        }
 
-    /* Hero Section */
-    .hero {
-        background: url('https://source.unsplash.com/1600x900/?nature,water'); /* Sets the background image */
-        background-size: cover; /* Sets the background size to cover */
-        background-position: center; /* Sets the background position to center */
-        color: #fff; /* Sets the text color to white */
-        text-align: center; /* Aligns the text to the center */
-        padding: 100px 0; /* Sets the padding to 100px on the top and bottom */
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a text shadow */
-    }
+        /* Hero Section */
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?nature,water');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
 
-    .hero h1 {
-        font-size: 3em; /* Sets large font size for main heading */
-        margin-bottom: 20px; /* Sets the bottom margin to 20px */
-        color:#ff9800; /* Sets the text color to orange */
-    }
-
-    .hero p {
-        font-size: 1.5em; /* Sets medium font size for subheading*/
-    }
-
-    .hero .btn-primary {
-        background-color: #ff9800; /* Sets the button background color to orange */
-        border: none; /* Removes the button border */
-    }
-
-    .hero .btn-primary:hover {
-        background-color: #ff9800; /* Sets the button background color to orange */
-        color: #fff; /* Sets the text color to white */
-    }
-
-    /* ABout Section */
-    .about {
-        background-color: #f4f4f4;/* Sets the background color to light gray */
-        padding: 60px 0; /* Sets the padding to 60px on the top and bottom */
-    }
-
-    .about h2 {
-        color:#ff9800; /* Sets the text color to orange */
-        margin-bottom: 20px; /* Adds sp,e s[ace below the heading */
-    }
-
-    .about p {
-        color: #666; /* Sets the paragraph text color to medium-gray */
-    }
-
-    /* Features section */
-    .features {
-        background-color:#fff; /* Sets the background color to white */
-        padding: 60px 0; /* Adds padding to the top and bottom of the section */
-    }
-
-    .features .card {
-        border: none; /* Removes the card border */
-        transition: transform 0.3s ease; /* Adds a smooth transition effect for transformations*/
-    }
-
-    .features .card:hover {
-        transform: translateY(-10px); /* Moves the card up by 10px on hover */
-    }
-
-    .features .card-body {
-        background-color: #f8f9fa; /* Sets the card body background color to light gray */
-        border-radius: 10px; /* Adds rounded corners to the card body */
-        padding: 30px; /* Adds padding to the card body */
-    }
-
-    .features .card-title {
-        color: #ff9800; /* Sets the card title color to orange */
-        margin-bottom: 15px; /* Adds space below the card title */
-    }
-
-.features .card-text {
-    color: #666; /* Sets the card text color to medium-gray */
-}
-
-/* Contact section */
-.contact {
-    background-color:#f4f4f4; /* Sets the background color to light gray */
-    padding: 60px 0; /* Adds padding to the top and bottom of the section */
-}
-
-.contact h2 {
-    color:#ff9800; /* Sets the text color to orange */
-    margin-bottom: 20px; /* Adds some space below the heading */
-}
-
-.contact .form-control {
-    border-radius: 5px; /* Adds rounded corners to the form control */
-    border: 1px solid #ccc; /* Adds a border around the form control */
-}
-
-.contact .btn-primary {
-    background-color: #ff9800; /* Sets the button background color to orange */
-    border: none; /* Removes the button border */
-}
-
-.contact .btn-primary:hover {
-    background-color: #e68900; /* Sets the button background color to a darker shade of orange on hover */
-}
-
-/* Footer */
-.footer {
-    background-color: #333; /* Sets the background color to dark gray */
-    color: #fff; /* Sets the text color to white */
-    padding: 20px 0; /* Adds padding to the top and bottom of the footer */
-    text-align:center; /* Aligns the text to the center */
-}
-
-    .footer p {
-        margin-bottom: 0; /* Removes the bottom margin from the paragraph */
-    }
-
-    /* Responsive Styling */
-    @media (max-width: 768px) {
         .hero h1 {
-            font-size: 2em; /* Sets the font size to 2em on smaller screens */
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #ff9800;
         }
 
         .hero p {
-            font-size: 1.2em; /* Sets the font size to 1.2em on smaller screens */
+            font-size: 1.5em;
+        }
+
+        .hero .btn-primary {
+            background-color: #ff9800;
+            border: none;
+        }
+
+        .hero .btn-primary:hover {
+            background-color: #ff9800;
+            color: #fff;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #f4f4f4;
+            padding: 60px 0;
         }
 
         .about h2 {
-            font-size: 2em; /* Sets the font size to 2em on smaller screens */
+            color: #ff9800;
+            margin-bottom: 20px;
         }
 
         .about p {
-            font-size: 1.2em; /* Sets the font size to 1.2em on smaller screens */
+            color: #666;
+        }
+
+        /* Features Section */
+        .features {
+            background-color: #fff;
+            padding: 60px 0;
+        }
+
+        .features .card {
+            border: none;
+            transition: transform 0.3s ease;
+        }
+
+        .features .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .features .card-body {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 30px;
         }
 
         .features .card-title {
-            font-size: 1.5em; /* Sets the font size to 1.5em on smaller screens */
+            color: #ff9800;
+            margin-bottom: 15px;
         }
 
         .features .card-text {
-            font-size: 1.2em; /* Sets the font size to 1.2em on smaller screens */
+            color: #666;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #f4f4f4;
+            padding: 60px 0;
         }
 
         .contact h2 {
-            font-size: 2em; /* Sets the font size to 2em on smaller screens */
+            color: #ff9800;
+            margin-bottom: 20px;
         }
-    }
-     </style>
+
+        .contact .form-control {
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact .btn-primary {
+            background-color: #ff9800;
+            border: none;
+        }
+
+        .contact .btn-primary:hover {
+            background-color: #e68900;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer p {
+            margin-bottom: 0;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .hero p {
+                font-size: 1.2em;
+            }
+
+            .about h2 {
+                font-size: 2em;
+            }
+
+            .about p {
+                font-size: 1.2em;
+            }
+
+            .features .card-title {
+                font-size: 1.5em;
+            }
+
+            .features .card-text {
+                font-size: 1.2em;
+            }
+
+            .contact h2 {
+                font-size: 2em;
+            }
+        }
+    </style>
 </head>
 <body>
-     <!-- Navigation bar -->
-     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <!-- Website name -->
             <a class="navbar-brand" href="#">My Website</a>
-            <!-- Button for collapsing navigation bar on small screens -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- Navigation links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -213,19 +209,18 @@
         </div>
     </nav>
 
-    <!-- Hero section with background image and welcome message -->
+    <!-- Hero Section -->
     <header class="hero text-center">
         <div class="container">
             <h1>Welcome to My Website</h1>
             <p class="lead">Your journey begins here.</p>
-            <!-- Button linking to more information -->
             <a href="#" class="btn btn-primary btn-lg" type="button">Learn More</a>
         </div>
     </header>
 
-    <!-- About section with text and image -->
+    <!-- About Section -->
     <section class="about py-5">
-        <div class="container animate-on-scroll">
+        <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <h2>About Us</h2>
@@ -233,14 +228,13 @@
                     <p>Whether it's developing responsive front-end interfaces or engineering powerful back-end systems, I ensure every piece of code is written with precision and purpose.</p>
                 </div>
                 <div class="col-md-6">
-                    <!-- Random tech-related image from Unsplash -->
                     <img src="https://source.unsplash.com/random/600x400?tech" class="img-fluid" alt="About Us">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features section with cards -->
+    <!-- Features Section -->
     <section class="features py-5 bg-light">
         <div class="container">
             <div class="row">
@@ -248,8 +242,7 @@
                     <div class="card animate-on-scroll">
                         <div class="card-body text-center">
                             <div class="mb-3">
-                                <!-- Speedometer icon -->
-                                <i class="bi bi-speedometer2" style="font-size: 2rem;"></i>
+                                <i class="fas fa-tachometer-alt" style="font-size: 2rem;"></i>
                             </div>
                             <h5 class="card-title">Feature 1</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -260,8 +253,7 @@
                     <div class="card animate-on-scroll">
                         <div class="card-body text-center">
                             <div class="mb-3">
-                                <!-- Lightbulb icon -->
-                                <i class="bi bi-lightbulb" style="font-size: 2rem;"></i>
+                                <i class="fas fa-lightbulb" style="font-size: 2rem;"></i>
                             </div>
                             <h5 class="card-title">Feature 2</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -272,8 +264,7 @@
                     <div class="card animate-on-scroll">
                         <div class="card-body text-center">
                             <div class="mb-3">
-                                <!-- Heart icon -->
-                                <i class="bi bi-heart" style="font-size: 2rem;"></i>
+                                <i class="fas fa-heart" style="font-size: 2rem;"></i>
                             </div>
                             <h5 class="card-title">Feature 3</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -284,9 +275,9 @@
         </div>
     </section>
 
-    <!-- Contact section with a form -->
+    <!-- Contact Section -->
     <section class="contact py-5">
-        <div class="container animate-on-scroll">
+        <div class="container">
             <h2>Contact Us</h2>
             <form>
                 <div class="mb-3">
@@ -306,7 +297,7 @@
         </div>
     </section>
 
-    <!-- Footer section -->
+    <!-- Footer Section -->
     <footer class="footer text-center">
         <div class="container">
             <p>&copy; 2024 My Website. All rights reserved.</p>
@@ -314,8 +305,8 @@
     </footer>
 
     <!-- Link to Bootstrap JavaScript bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <!-- Link to your custom JavaScript file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- Link to custom JavaScript file (if needed) -->
     <script src="path/to/your/javascript-file.js"></script>
 </body>
 </html>
