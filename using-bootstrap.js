@@ -12,3 +12,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 });
             });
         });
+
+    // Back to top button
+    const backToTopButton = document.createElement('button'); // Create the button
+    backToTopButton.innerText = '↑'; // Set button text
+    backToTopButton.id = 'backToTop'; // Set button ID
+    // Style the button
+    backToTopButton.style.position = 'fixed';
+    backToTopButton.style.bottom = '30px';
+    backToTopButton.style.right = '30px';
+    backToTopButton.style.padding = '10px';
+    backToTopButton.style.fontSize = '20px';
+    backToTopButton.style.display = 'none'; // Initially hide the button
+    backToTopButton.style.zIndex = '1000';
+    backToTopButton.style.backgroundColor = '#ff9800';
+    backToTopButton.style.border = 'none';
+    backToTopButton.style.borderRadius = '50%';
+    backToTopButton.style.color = '#fff';
+    document.body.appendChild(backToTopButton); // Add button to the page 
