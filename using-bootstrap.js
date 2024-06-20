@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const backToTopButton = document.createElement('button'); // Create the button
     backToTopButton.innerText = '↑'; // Set button text
     backToTopButton.id = 'backToTop'; // Set button ID
+    
     // Style the button
     backToTopButton.style.position = 'fixed';
     backToTopButton.style.bottom = '30px';
@@ -29,4 +30,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
     backToTopButton.style.border = 'none';
     backToTopButton.style.borderRadius = '50%';
     backToTopButton.style.color = '#fff';
-    document.body.appendChild(backToTopButton); // Add button to the page 
+    document.body.appendChild(backToTopButton); // Add button to the page
+
+    // Add event listener to the button
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0, // Scroll to the top
+            behavior: 'smooth' // Smooth scrolling
+        });
+    });
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopButton.style.display = 'block'; // Show button when scrolled down
+        } else {
+            backToTopButton.style.display = 'none'; // Hide button when at the top
+        }
+    }); 
