@@ -2,3 +2,22 @@
     max-width: 100%;
     height: auto;
 }
+/* style.css */
+
+/* Custom styles for images */
+.about img[src$="2.HEIC"],
+.contact img[src$="3.jpg"] {
+    border: 1px solid #ccc; /* Adds a thin border around the specified images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle drop shadow */
+    max-width: 100%; /* Ensures images don't exceed their container width */
+    height: auto; /* Ensures images scale proportionally */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .about img[src$="2.HEIC"],
+    .contact img[src$="3.jpg"] {
+        margin-bottom: 15px; /* Adds space below images on smaller screens */
+    }
+}
